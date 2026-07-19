@@ -556,7 +556,7 @@
       displayedValues.set(skill.id, settled ? skill.value : next);
       if (!settled) stillAnimating = true;
 
-      const targetHover = skill.id === hover
+   
       const targetHover = skill.id === hoveredId ? 1 : 0;
       const currentHover = hoverAmount.get(skill.id) ?? 0;
       const nextHover = lerp(currentHover, targetHover, 0.2);
